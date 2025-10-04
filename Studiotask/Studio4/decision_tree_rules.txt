@@ -1,0 +1,96 @@
+Decision Tree Rules (Top 10 Features)
+
+|--- acc_peak_yz_right <= 9.00
+|   |--- acc_peak_yz_left <= 3.00
+|   |   |--- acc_peak_yz_left <= 2.00
+|   |   |   |--- acc_peak_yz_left <= 2.00
+|   |   |   |   |--- acc_peak_xyz_right <= 6.01
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- acc_peak_xyz_right >  6.01
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- acc_peak_yz_left >  2.00
+|   |   |   |   |--- acc_peak_xyz_right <= 6.01
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- acc_peak_xyz_right >  6.01
+|   |   |   |   |   |--- class: 1
+|   |   |--- acc_peak_yz_left >  2.00
+|   |   |   |--- acc_peak_x_right <= 3.99
+|   |   |   |   |--- acc_peak_y_right <= 4.92
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- acc_peak_y_right >  4.92
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- acc_peak_x_right >  3.99
+|   |   |   |   |--- acc_peak_y_right <= 9.02
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- acc_peak_y_right >  9.02
+|   |   |   |   |   |--- class: 0
+|   |--- acc_peak_yz_left >  3.00
+|   |   |--- acc_peak_xy_right <= 6.00
+|   |   |   |--- acc_peak_xy_right <= 6.00
+|   |   |   |   |--- acc_peak_xy_right <= 5.00
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- acc_peak_xy_right >  5.00
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- acc_peak_xy_right >  6.00
+|   |   |   |   |--- acc_peak_yz_right <= 7.01
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- acc_peak_yz_right >  7.01
+|   |   |   |   |   |--- class: 2
+|   |   |--- acc_peak_xy_right >  6.00
+|   |   |   |--- acc_peak_yz_left <= 6.00
+|   |   |   |   |--- acc_peak_xy_right <= 7.00
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- acc_peak_xy_right >  7.00
+|   |   |   |   |   |--- class: 2
+|   |   |   |--- acc_peak_yz_left >  6.00
+|   |   |   |   |--- acc_peak_xy_right <= 7.00
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- acc_peak_xy_right >  7.00
+|   |   |   |   |   |--- class: 2
+|--- acc_peak_yz_right >  9.00
+|   |--- acc_peak_yz_left <= 2.38
+|   |   |--- acc_peak_y_right <= 8.98
+|   |   |   |--- acc_peak_z_right <= 9.98
+|   |   |   |   |--- acc_peak_xy_right <= 9.04
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- acc_peak_xy_right >  9.04
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- acc_peak_z_right >  9.98
+|   |   |   |   |--- acc_peak_z_left <= 1.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- acc_peak_z_left >  1.50
+|   |   |   |   |   |--- class: 2
+|   |   |--- acc_peak_y_right >  8.98
+|   |   |   |--- acc_peak_x_right <= 10.58
+|   |   |   |   |--- acc_peak_xy_right <= 9.08
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- acc_peak_xy_right >  9.08
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- acc_peak_x_right >  10.58
+|   |   |   |   |--- acc_peak_xy_right <= 9.53
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- acc_peak_xy_right >  9.53
+|   |   |   |   |   |--- class: 1
+|   |--- acc_peak_yz_left >  2.38
+|   |   |--- acc_peak_y_right <= 8.00
+|   |   |   |--- acc_peak_xyz_right <= 10.00
+|   |   |   |   |--- acc_peak_yz_right <= 10.00
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- acc_peak_yz_right >  10.00
+|   |   |   |   |   |--- class: 2
+|   |   |   |--- acc_peak_xyz_right >  10.00
+|   |   |   |   |--- acc_peak_yz_left <= 6.16
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- acc_peak_yz_left >  6.16
+|   |   |   |   |   |--- class: 0
+|   |   |--- acc_peak_y_right >  8.00
+|   |   |   |--- acc_peak_xyz_right <= 10.00
+|   |   |   |   |--- acc_peak_yz_right <= 9.99
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- acc_peak_yz_right >  9.99
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- acc_peak_xyz_right >  10.00
+|   |   |   |   |--- acc_peak_z_right <= 7.04
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- acc_peak_z_right >  7.04
+|   |   |   |   |   |--- class: 0
